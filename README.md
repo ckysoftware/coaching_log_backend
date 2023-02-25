@@ -2,13 +2,19 @@
 
 ## Local development
 
-1. Start the server
+1. Initialize the fake postgres database
+
+    ```bash
+    python fake_db_sql.py
+    ```
+
+2. Start the server
 
     ```bash
     uvicorn main:app --reload
     ```
 
-2. Access the Swagger Page
+3. Access the Swagger Page
 
     * [http://localhost:8000/docs](https://localhost:8000/docs)
 
